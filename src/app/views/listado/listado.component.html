@@ -1,0 +1,6 @@
+<div id="listado">
+  <h3>Listado de entradas al blog: </h3>
+  <app-entrada *ngFor="let item of listadoEntradas"
+    [entrada] = "item"
+    (doEvent)="mostrarDetalleEntrada($event)"></app-entrada>
+</div>
